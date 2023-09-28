@@ -81,7 +81,7 @@ export default function ToBuyList() {
           Cancel
         </Button>
       </Form>
-      <ToBuyList/>
+      
     </div>
   );
 }

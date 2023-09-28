@@ -6,7 +6,8 @@ import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ListGroup from "react-bootstrap/ListGroup";
 
-// const [item, setItem] = useState("");
+
+
 const items = [
   {
     id: 0,
@@ -53,6 +54,7 @@ const items = [
 ];
 // const listItemsListItemss = items.map((item) => <li>{item}</li>);
 const listItem = items.map((item) => (
+  
   // <li>
   <ListGroup.Item>
     <div class="container">
@@ -89,10 +91,12 @@ const listItem = items.map((item) => (
 ));
 
 function ListItems(props) {
+  // const [itemData, setItem] = useState({ data: "" });
+const {itemName} = props
   return (
     <div>
       <h1> item list</h1>
-      <p>{props.data}</p>
+      <p>{props.itemName}</p>
       <ListGroup>
         <ListGroup.Item>{listItem}</ListGroup.Item>
       </ListGroup>

@@ -11,14 +11,14 @@ function MainNavBar() {
     <Navbar>
       {" "}
       <Nav
-        activeKey="/listItems"
+        activeKey="/"
         onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
       >
         <Nav.Item>
           {/* <LinkContainer to="/list-items"></LinkContainer> */}
 
           <Nav.Link>
-            <Link to="/list-items">
+            <Link to="/">
               {" "}
               <h4> Home</h4>
             </Link>
@@ -27,7 +27,7 @@ function MainNavBar() {
 
         <Nav.Item>
           {/* <LinkContainer to="/list-items"> </LinkContainer> */}
-          <Nav.Link>
+          <Nav.Link href="/list-items">
             <Link to="/list-items">
               {" "}
               <h5>All Items</h5>

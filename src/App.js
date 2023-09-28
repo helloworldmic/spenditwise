@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+// import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import MainNavBar from "./MainNavbar";
@@ -19,20 +19,20 @@ export default function App() {
       <BrowserRouter>
         <MainNavBar />
         <Routes>
-          <Route path="/"exact={true} element={<LoginPage />} />
-          <Route path="/list-items" component={<ListItems />} />
+          <Route path="/" element={<LoginPage />} />
+          <Route path="/list-items" component={<ListItems itemName="Alice"/>} />
           <Route path="/to-buy-list" element={<ToBuyList />} />
           <Route path="/add-new-item" element={<AddNewItem />} />
           <Route path="/item-details" element={<OneItemHistoryPrice />} />
           <Route path="/settings" element={<SettingsPage />} />
         </Routes>
       </BrowserRouter>
-
       <ListItems />
-
+      {/* 
+      
       <AddNewItem />
       <ToBuyList />
-      <LoginPage />
+      <LoginPage /> */}
 
       {/* <ItemDetails /> */}
     </div>
